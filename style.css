@@ -7,7 +7,10 @@ body {
 }
 
 header {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 header h1 {
@@ -16,11 +19,29 @@ header h1 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-top: auto;
+}
+
+header h3 {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: auto;
+}
+
+header button {
+  background-color: #FA8072;
+  padding: 0.8rem;
+  border: 0.3rem solid #808080;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .container {
   display: flex;
-  margin: auto;
+  margin: 1rem;
 }
 
 .grid {
@@ -28,7 +49,8 @@ header h1 {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: #000000;
+  border: 0.3rem solid #C0C0C0;
 }
 
 .grid div {
@@ -46,7 +68,8 @@ header h1 {
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: #000000;
+  border: 0.3rem solid #C0C0C0;
 }
 
 .mini-grid div {
